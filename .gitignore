@@ -1,0 +1,41 @@
+# 👉 General
+.DS_Store
+Thumbs.db
+
+# 👉 Dependencies
+/node_modules
+
+# 👉 Build outputs
+/.next
+/out
+/build
+/.turbo
+
+# 👉 Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# 👉 Environment variables
+.env
+.env.*           # include .env.local, .env.production, etc.
+
+# 👉 TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# 👉 Vercel
+.vercel
+
+# 👉 Test coverage
+coverage/
+
+# 👉 VS Code settings (optional)
+.vscode/
+
+# 👉 System
+*.swp
+*.swo
+.idea/
