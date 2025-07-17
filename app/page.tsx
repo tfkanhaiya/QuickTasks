@@ -1,4 +1,28 @@
-import { TaskList } from "@/components/task-list"
+// import { TaskList } from "@/components/task-list-firebase"
+// import { TaskInput } from "@/components/task-input"
+// import { AiAssistant } from "@/components/ai-assistant"
+// import { ThemeToggle } from "@/components/theme-toggle"
+
+// export default function Home() {
+//   return (
+//     <div className="min-h-screen bg-background">
+//       <div className="container max-w-3xl mx-auto py-8 px-4">
+//         <header className="flex items-center justify-between mb-8">
+//           <h1 className="text-3xl font-bold">QuickTasks</h1>
+//           <ThemeToggle />
+//         </header>
+
+//         <div className="space-y-8">
+//           <TaskInput />
+//           <AiAssistant />
+//           <TaskList />
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
+
+import FirebaseTaskList from "@/components/task-list-firebase" // ✅ use the updated Firebase version
 import { TaskInput } from "@/components/task-input"
 import { AiAssistant } from "@/components/ai-assistant"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -15,9 +39,10 @@ export default function Home() {
         <div className="space-y-8">
           <TaskInput />
           <AiAssistant />
-          <TaskList />
+          <FirebaseTaskList /> {/* ✅ use Firebase-enabled task list */}
         </div>
       </div>
     </div>
   )
 }
+
